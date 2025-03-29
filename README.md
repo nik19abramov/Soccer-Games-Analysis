@@ -14,15 +14,6 @@ This project implements an end-to-end data pipeline for **analyzing internationa
 
 ## Architecture
 
-```mermaid
-graph TD
-    A[Kaggle Data] --> B(Airflow Ingestion)
-    B --> C{GCS Bucket}
-    C --> D[BigQuery Raw]
-    D --> E[dbt Transformation]
-    E --> F[BigQuery Analytics]
-    F --> G[Looker Dashboard]
-The aim of the project is to create a full datapipline to make a dashbord visualising own goals scored in football matches. 
 
 ## Quick Start
 
