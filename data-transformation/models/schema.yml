@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: goalscorers_own_goals
+    description: "Aggregates the number of own goals scored by each team per year"
+    columns:
+      - name: year
+        description: "Year extracted from the match date"
+        tests:
+          - not_null
+      - name: team
+        description: "Team responsible for the own goal"
+        tests:
+          - relationships:
+              to: source('raw', 'former_names')
+              field: "`current`" 
+              config:
+                severity: warn  
+      - name: n_own_goals
+        description: "Total number of own goals scored in the year"
+        tests:
+          - not_null
