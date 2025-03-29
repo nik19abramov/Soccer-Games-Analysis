@@ -89,8 +89,16 @@ Access the Looker dashboard by navigating to the [link](https://lookerstudio.goo
 ![Looker Studio Dashboard](images/looker.png)
 
 
-
-
-
 ## Contributing
-PRs welcome! See our [contributing guide](CONTRIBUTING.md)
+
+1. Fork the repository
+2. Create feature branch: `git checkout -b feature/your-feature`
+3. Commit changes: `git commit -m 'Add some feature'`
+4. Push to branch: `git push origin feature/your-feature`
+5. Open a Pull Request
+
+## License
+
+MIT License - see LICENSE for details
+
+
