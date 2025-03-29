@@ -4,7 +4,10 @@ This project implements an end-to-end data pipeline for **analyzing internationa
 
 The data source is from Kaggle [International football results from 1872 to 2025](https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017)
 
-## Features
+## Architecture
+![Architecture Diagram](images/architecture.png)
+
+### Features
 
 - **Workflow Orchestration** with **Docker**
 - **Data Orchestration** using **Airflow**
@@ -12,10 +15,6 @@ The data source is from Kaggle [International football results from 1872 to 2025
 - **Interactive Data Visualization** using **Looker**
 - **Data Transformation** with **dbt**
 - **Infrastructure as Code** with **Terraform**
-
-
-## Architecture
-![Architecture Diagram](images/architecture.png)
 
 ## Quick Start
 
