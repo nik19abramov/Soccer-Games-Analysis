@@ -1,6 +1,7 @@
 # Soccer Games Analytics Pipeline
 
 Modern data stack for analyzing international football results with:
+- **Docker**: Wordflow orchestration
 - **Airflow**: Data orchestration
 - **BigQuery**: Data warehousing
 - **dbt**: Data transformation
