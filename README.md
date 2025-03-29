@@ -13,7 +13,7 @@ This project implements an end-to-end data pipeline for **analyzing internationa
 
 
 ## Architecture
-![Architecture Diagram](images/workflow.png)
+![Architecture Diagram](images/architecture.png)
 
 ## Quick Start
 
