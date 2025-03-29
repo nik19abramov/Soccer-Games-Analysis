@@ -33,6 +33,7 @@ Ensure you have the following installed:
    ```bash
    git clone https://github.com/nik19abramov/Soccer-Games-Analysis.git
    cd Soccer-Games-Analysis
+   ```
 
 2. **Start the Environment with Docker**
 Use the provided Docker Compose file to bring up the containerized services:
@@ -48,8 +49,9 @@ Navigate to the Terraform folder, initialize, and apply the configuration:
   cd terraform
   terraform init
   terraform apply
+  ```
 
-### 4. Trigger Airflow DAGs Using the Airflow UI
+4. **Trigger Airflow DAGs Using the Airflow UI**
 
 - Open your web browser and navigate to [http://localhost:8080](http://localhost:8080).
 - Log in with the following credentials:  
@@ -59,7 +61,7 @@ Navigate to the Terraform folder, initialize, and apply the configuration:
 - Click on the toggle to unpause the DAG if it's paused.
 - Click the "Trigger DAG" button to start the pipeline.
 
-### 5. Deploy dbt Models
+5. **Deploy dbt Models**
 
 Run the dbt models to transform and prepare your data:
 
@@ -68,7 +70,7 @@ cd data-transformation
 dbt run
 
 
-### 6.  View the Looker Dashboard
+6. **View the Looker Dashboard**
 Access the Looker dashboard by navigating to the [link](https://lookerstudio.google.com/reporting/ecfaa9f4-3feb-4fd7-9c2c-92bc4bc29f64)
 
 
