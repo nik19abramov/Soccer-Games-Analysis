@@ -1,5 +1,7 @@
 # Soccer Games Analytics Pipeline
 
+The aim of the project is to create a full datapipline to make a dashbord visualising own goals scored in football matches. 
+
 Modern data stack for analyzing international football results with:
 - **Docker**: Wordflow orchestration
 - **Airflow**: Data orchestration
@@ -12,11 +14,7 @@ Modern data stack for analyzing international football results with:
 ![architecture diagram]
 
 ## Quick Start
-1. Clone repo
-2. Set up GCP credentials
-3. Terraform init/apply
-4. Deploy DAGs to Composer
-5. Run dbt transformations
+
 
 ## Contributing
 PRs welcome! See our [contributing guide](CONTRIBUTING.md)
