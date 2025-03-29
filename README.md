@@ -48,6 +48,7 @@ Navigate to the Terraform folder, initialize, and apply the configuration:
   ```bash
   cd terraform
   terraform init
+  terraform plan
   terraform apply
   ```
 
@@ -67,6 +68,7 @@ Run the dbt models to transform and prepare your data:
 
    ```bash
    cd data-transformation
+   dbt build
    dbt run
    ```
 
