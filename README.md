@@ -7,13 +7,13 @@ The data source is from Kaggle [International football results from 1872 to 2025
 ## Architecture
 ![Architecture Diagram](images/architecture.png)
 
-#### Features
+#### Technology Stack
 
 - **Workflow Orchestration** with **Docker**
 - **Data Orchestration** using **Airflow**
 - **Scalable Data Warehousing** with **BigQuery**
 - **Interactive Data Visualization** using **Looker**
-- **Data Transformation** with **dbt**
+- **Data Transformation** with **data build tool**
 - **Infrastructure as Code** with **Terraform**
 
 ## Quick Start
@@ -28,7 +28,6 @@ Ensure you have the following installed:
 - [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) (for BigQuery access)
 
 ### Setup
-
 1. **Clone the Repository**
 
    ```bash
@@ -48,10 +47,22 @@ Navigate to the Terraform folder, initialize, and apply the configuration:
 
   ```bash
   cd terraform
+
+  #initializing
   terraform init
+
   terraform plan
+
+  #applying
   terraform apply
   ```
+
+It is necessary to update `variables.tf` with corresponding:
+- path to the file with your GCP credentials json 
+- Project Id
+- BigQuery Dataset Name
+- Bucket Name
+
 
 4. **Trigger Airflow DAGs Using the Airflow UI**
 
