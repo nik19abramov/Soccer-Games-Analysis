@@ -2,7 +2,7 @@
 
 This project implements an end-to-end data pipeline for **analyzing international football match data**. Built on a modern data stack, it automates data ingestion, transformation, and analysis using Airflow, BigQuery, and dbt, with infrastructure managed through Terraform.
 
-The data source is from Kaggle International football results from 1872 to 2025 https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017 
+The data source is from Kaggle [International football results from 1872 to 2025](https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017)
 
 ## Features
 
