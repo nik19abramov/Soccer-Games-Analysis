@@ -39,6 +39,7 @@ Use the provided Docker Compose file to bring up the containerized services:
 
   ```bash
   docker-compose up -d
+  ```
 
 3. **Provision Infrastructure with Terraform**
 Navigate to the Terraform folder, initialize, and apply the configuration:
