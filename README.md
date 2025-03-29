@@ -75,6 +75,8 @@ Run the dbt models to transform and prepare your data:
 6. **View the Looker Dashboard**
 Access the Looker dashboard by navigating to the [link](https://lookerstudio.google.com/reporting/ecfaa9f4-3feb-4fd7-9c2c-92bc4bc29f64)
 
+![Looker Studio Dashboard](images/looker.png)
+
 
 
 
