@@ -65,10 +65,10 @@ Navigate to the Terraform folder, initialize, and apply the configuration:
 
 Run the dbt models to transform and prepare your data:
 
-```bash
-cd data-transformation
-dbt run
-
+   ```bash
+   cd data-transformation
+   dbt run
+   ```
 
 6. **View the Looker Dashboard**
 Access the Looker dashboard by navigating to the [link](https://lookerstudio.google.com/reporting/ecfaa9f4-3feb-4fd7-9c2c-92bc4bc29f64)
