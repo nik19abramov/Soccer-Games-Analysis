@@ -4,6 +4,7 @@ Modern data stack for analyzing international football results with:
 - **Docker**: Wordflow orchestration
 - **Airflow**: Data orchestration
 - **BigQuery**: Data warehousing
+- **Looker**: Data visualization
 - **dbt**: Data transformation
 - **Terraform**: Infrastructure as Code
 
