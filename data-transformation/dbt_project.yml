@@ -1,0 +1,28 @@
+name: 'soccer_analytics' 
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'soccer_analytics'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+models:
+  soccer_analytics:  # Must match project name
+    # Optional: Configure default materialization
+    +materialized: view  # Set default to view instead of table
+    
+    # Only keep this if you have an example/ folder
+    example:  # Safe to remove if not using example models
+      +materialized: table

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: soccer
+    tables:
+      - name: goalscorers
+      - name: former_names
+      - name: results
+      - name: shootouts
