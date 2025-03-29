@@ -38,7 +38,7 @@ Ensure you have the following installed:
 2. **Start the Environment with Docker**
 Use the provided Docker Compose file to bring up the containerized services:
 
-  ```bash
+  ```bash 
   docker-compose up -d
   ```
 
