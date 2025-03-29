@@ -16,7 +16,7 @@ The data source is from Kaggle [International football results from 1872 to 2025
 - **Data Transformation** with **data build tool**
 - **Infrastructure as Code** with **Terraform**
 
-## Quick Start
+## Setup
 
 ### Prerequisites
 
@@ -27,22 +27,21 @@ Ensure you have the following installed:
 - [dbt](https://docs.getdbt.com/docs/installation)
 - [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) (for BigQuery access)
 
-### Setup
-1. **Clone the Repository**
+### 1. Clone the Repository
 
    ```bash
    git clone https://github.com/nik19abramov/Soccer-Games-Analysis.git
    cd Soccer-Games-Analysis
    ```
 
-2. **Start the Environment with Docker**
+### 2. **Start the Environment with Docker**
 Use the provided Docker Compose file to bring up the containerized services:
 
   ```bash 
   docker-compose up -d
   ```
 
-3. **Provision Infrastructure with Terraform**
+### 3. **Provision Infrastructure with Terraform**
 Navigate to the Terraform folder, initialize, and apply the configuration:
 
   ```bash
@@ -64,7 +63,7 @@ It is necessary to update `variables.tf` with corresponding:
 - Bucket Name
 
 
-4. **Trigger Airflow DAGs Using the Airflow UI**
+### 4. **Trigger Airflow DAGs Using the Airflow UI**
 
 - Open your web browser and navigate to [http://localhost:8080](http://localhost:8080).
 - Log in with the following credentials:  
@@ -74,7 +73,7 @@ It is necessary to update `variables.tf` with corresponding:
 - Click on the toggle to unpause the DAG if it's paused.
 - Click the "Trigger DAG" button to start the pipeline.
 
-5. **Deploy dbt Models**
+### 5. **Deploy dbt Models**
 
 Run the dbt models to transform and prepare your data:
 
@@ -84,12 +83,10 @@ Run the dbt models to transform and prepare your data:
    dbt run
    ```
 
-6. **View the Looker Dashboard**
+### 6. **View the Looker Dashboard**
 Access the Looker dashboard by navigating to the [link](https://lookerstudio.google.com/reporting/ecfaa9f4-3feb-4fd7-9c2c-92bc4bc29f64)
 
 ![Looker Studio Dashboard](images/looker.png)
-
-
 
 
 
